@@ -1,0 +1,13 @@
+/* #Style Login flat
+================================================*/
+page-login {
+    .background {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(10deg, #4e5efc, #4ee7fc);
+    }
+
+    ion-card.card{
+        background: rgba(232, 230, 230, 0.6px);
+    }
+}

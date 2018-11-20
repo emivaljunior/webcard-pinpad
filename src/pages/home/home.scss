@@ -1,0 +1,13 @@
+page-home {
+    .hideArrows,
+    .hideArrows::-webkit-inner-spin-button, 
+    .hideArrows::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+        -moz-appearance:textfield;
+    }
+    
+    .barButton { 
+        margin-top: 100px;
+    }
+}
