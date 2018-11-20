@@ -1,12 +1,44 @@
 <ion-header>
 
 </ion-header>
-<ion-content>
-  <div text-center>
-      <img padding src="../../assets/imgs/qrcode.png" width="200" height="200" />
-  </div>
-  <div ion-item no-lines>
-    <div ion-label color="dark">Nome</div>
-    <p>{{cartao}}</p>
-  </div>
+<ion-content class="background">
+  <ion-item text-center>io
+    <img src="../../assets/imgs/qrcode.png"
+  </ion-item>
+  <ion-card>
+    <ion-card-header>
+      <ion-item text-center>
+        <h1>Dados do cartão</h1>
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label floating>
+            Nome:
+        </ion-label>
+        <ion-input disabled [value]="cartao.nomeExibicao"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+          Cpf:
+        </ion-label>
+        <ion-input disabled [value]="cartao.dadosFinanceiros.cliente.cpf"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+          Número Cartão:
+        </ion-label>
+        <ion-input disabled [value]="cartao.numero"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          Senha:
+        </ion-label>
+        <ion-input class="password" type="number" [ngModel]="senha" pattern="[0-9]*" inputmode="numeric"></ion-input>
+      </ion-item>
+      <ion-item>
+        <button ion-button block color="secundary">OK</button>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
 </ion-content> 
